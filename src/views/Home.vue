@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{count}}</h1>
+    <os-button type="primary" size="default" :click="add">点击</os-button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+
+  },
+  data() {
+    return {
+      count: 0
+    };
+  },
+  mounted() {
+
+  },
+  methods: {
+    add() {
+      this.count++;
+    }
   }
 }
 </script>
