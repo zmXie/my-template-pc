@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import basicApi from '@/api/module/basic';
+import basicApi from '@/api/modules/basic';
 import axios from 'axios';
 
 // 多图上传

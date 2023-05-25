@@ -5,7 +5,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
 import store from '@/store/index';
-import { changeDomTitle } from '@/utils';
+import { changeDomTitle } from '@/utils/dom';
 // 路由数据
 import routes from './routes';
 
@@ -22,7 +22,6 @@ VueRouter.prototype.replace = function replace(location) {
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  scrollBehavior: () => ({ y: 0 }),
   mode: 'hash',
   base: process.env.BASE_URL,
   routes
